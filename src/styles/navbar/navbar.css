@@ -92,6 +92,23 @@
     line-height: 1.5;
     margin-bottom: 30px;
     color: rgb(177, 177, 177);
+    display: flex;
+    align-items: center;
+}
+
+.menu-section .icon-container {
+    background-color: #7A26C1; /* Box color */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Spacing between box and text */
+}
+
+.menu-section .icon {
+    width: 20px;
+    height: 20px;
 }
 
 .menu-button {
@@ -101,6 +118,7 @@
     border: none;
     cursor: pointer;
     margin-bottom: 30px;
+    font-size: 18px;
 }
 
 .menu-button:hover {
