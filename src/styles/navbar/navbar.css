@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-content {
+    position: relative;
+}
+
+.sidemenu-content {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-icon {
+    height: 40px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -450px; /* Start off-screen */
+    width: 450px;
+    height: 100%;
+    background-color: #11151c;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.side-menu.open {
+    right: 0; /* Slide into view */
+}
+
+.close-button {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    margin-bottom: 40px;
+}
+
+.menu-logo {
+    width: 60px;
+    height: auto;
+    margin-right: 0px; /* Reduce spacing between the logo and the text */
+}
+
+.menu-header h1 {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 35px;   
+    margin-left: 0; /* Remove the left margin */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.menu-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: rgb(177, 177, 177);
+}
+
+.menu-button {
+    background-color: #7A26C1;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.menu-button:hover {
+    background-color: #4ae19b;
+    color: #7A26C1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.social-icons i:hover {
+    color: #5865F2;
+}
