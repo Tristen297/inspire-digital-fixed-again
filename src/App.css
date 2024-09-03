@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Set Raleway as the global font */
+    background-color: black;
+    background: linear-gradient(to top left, black, #7A26C1 450%);
+    min-height: 100vh;
+}
+
+.App {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.glow-effect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust size based on your preference */
+    height: 300px; /* Adjust size based on your preference */
+    background: radial-gradient(circle at top left, #7A26C1, transparent 70%);
+    opacity: 0.5; /* Adjust opacity to make the glow subtle */
+    pointer-events: none; /* Ensure the glow doesn't interfere with any interaction */
+    z-index: 0; /* Ensure it stays in the background */
+}

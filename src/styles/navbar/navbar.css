@@ -9,11 +9,13 @@
 
 .navbar-content {
     position: relative;
-    background-color: #000; /* Black background for the navbar */
     padding: 10px; /* Optional: Add some padding to the navbar */
     display: flex;
     align-items: center;
     z-index: 1; /* Ensure navbar content is above other content but below the side menu */
+    height: 120px; /* Ensure the navbar-content height matches the side menu container */
+    border-bottom: 1px solid transparent; /* Initial transparent border */
+    border-image: linear-gradient(to right, grey, grey 30%, transparent 100%) 1; /* Gradient border image */
 }
 
 .sidemenu-container {
@@ -21,14 +23,15 @@
     align-items: center;
     justify-content: center;
     z-index: 2; /* Ensure the side menu icon is above the navbar content */
+    border-right: solid 1px grey; /* Thinner right border */
+    height: 116px; /* Make sure this container fills the height of the navbar-content */
 }
 
 .sidemenu-content {
-    background-color: #000; /* Black background for the side menu icon */
     padding: 10px; /* Optional: Add some padding around the icon */
     border-radius: 8px; /* Optional: Add rounded corners to the icon box */
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: flex; /* Enable Flexbox */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -112,7 +115,7 @@
 }
 
 .nav-links a:hover {
-    color: white; /* Keep text color white on hover */
+    color: #7A26C1; /*change text color on hover*/
 }
 
 .menu-header {

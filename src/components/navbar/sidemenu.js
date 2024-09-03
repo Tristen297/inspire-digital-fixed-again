@@ -55,13 +55,6 @@ function Sidemenu() {
                         contact@myinspiredigital.com
                     </p>
                 </div>
-
-                <div className="social-icons">
-                    <i className="fa fa-facebook"></i>
-                    <i className="fa fa-twitter"></i>
-                    <i className="fa fa-instagram"></i>
-                    <i className="fa fa-google"></i>
-                </div>
             </div>
         </div>
     );
