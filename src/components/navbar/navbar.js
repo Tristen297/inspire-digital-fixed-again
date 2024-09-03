@@ -14,10 +14,10 @@ function Navbar() {
                     <h1>Inspire Digital</h1>
                 </div>
                 <nav className="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#about">About Us</a>
-                    <a href="#contact">Contact</a>
+                    <a href="./">Home</a>
+                    <a href="./">Services</a>
+                    <a href="./">About Us</a>
+                    <a href="./">Contact</a>
                 </nav>
             </div>
         </div>
