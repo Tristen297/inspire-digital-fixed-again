@@ -55,12 +55,18 @@
     z-index: 1;
 }
 
+.outline-letter {
+    -webkit-text-stroke: 0.5px black; /* Thin black outline */
+    color: white;
+    font-weight: bold;
+}
+
 /* New styling for "AGENCY" */
 .agency-text {
     position: absolute;
     bottom: 30px;
     left: 850px;
-    font-size: 10rem; /* Make it smaller than "CREATIVE" */
+    font-size: 10rem; 
     color: rgb(37, 37, 37);
     font-weight: bold;
     z-index: 1;
