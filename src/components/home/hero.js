@@ -19,7 +19,9 @@ function Hero() {
             <div className="hero-content-text">
                 <p className="welcome-text">WELCOME TO OUR AGENCY</p>
                 <h1 className="main-heading">Digital Creative <br /> Studio</h1>
-                <p className="description">Over 15 years in the game & build successful, profitable products.</p>
+                <p className="description">
+                    Specializing in web design & development, we craft visually stunning,<br /> high-performing websites that drive success and profitability.
+                </p>
                 <button className="cta-button">Get Started Now</button>
             </div>
         </div>
