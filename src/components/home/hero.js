@@ -13,11 +13,11 @@ function Hero() {
                 <h1 className="hero-text">
                     <span className="outline-letter">C</span>REATIVE
                 </h1>
-                <h2 className="agency-text">AGENCY</h2>
+                <h2 className="agency-text">STUDIO</h2>
                 <img src={heroPic} alt="man working on computer" />
             </div>
             <div className="hero-content-text">
-                <p className="welcome-text">WELCOME TO OUR AGENCY</p>
+                <p className="welcome-text">WELCOME TO OUR STUDIO</p>
                 <h1 className="main-heading">Digital Creative <br /> Studio</h1>
                 <p className="description">
                     Specializing in web design & development, we craft visually stunning,<br /> high-performing websites that drive success and profitability.
