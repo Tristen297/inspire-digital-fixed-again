@@ -69,7 +69,7 @@
     font-size: 10rem; 
     color: rgb(37, 37, 37);
     font-weight: bold;
-    z-index: 1;
+    z-index: 0;
 }
 
 /* Styling for the text section */
