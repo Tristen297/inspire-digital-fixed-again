@@ -1,0 +1,97 @@
+/* General layout */
+.services-breakdown-content {
+    position: relative;
+    color: white; /* White text color */
+    padding: 0px 20px;
+    width: 900px;
+    margin-left: 800px;
+    margin-bottom: 100px;
+  }
+  
+  .services-breakdown-illustration {
+    position: absolute;
+    top: 300px;
+    left: -600px; /* Move the illustration to the left */
+    transform: translateY(-50%);
+  }
+  
+  .services-breakdown-illustration img {
+    width: 500px;
+    height: auto;
+  }
+  
+  /* Text styling */
+  .services-breakdown-text {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .services-breakdown-text h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .services-breakdown-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Change the color of the first <p> to purple */
+  .services-breakdown-text p:first-of-type {
+    color: #7A26C1; 
+  }
+  
+  /* Specific service boxes */
+  .services-breakdown-specific {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .service-1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .service-1 img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .service-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-1 h1 {
+    font-size: 1.5rem;
+    color: #7A26C1;
+    margin-bottom: 10px;
+  }
+  
+  .service-1 p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #cccccc;
+    margin-bottom: 0;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .services-breakdown-content {
+      height: auto;
+    }
+  
+    .services-breakdown-illustration {
+      display: none;
+    }
+  
+    .services-breakdown-specific {
+      grid-template-columns: 1fr;
+    }
+  }
+  

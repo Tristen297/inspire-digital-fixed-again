@@ -3,9 +3,9 @@
     justify-content: center;
     padding: 60px;
     margin-left: 700px;
-    min-height: 100vh;
+    min-height: 85vh;
     position: relative; /* Relative positioning for the content container */
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .about-us-left {
@@ -57,8 +57,9 @@
 }
 
 .icon-item p {
-    font-size: 14px;
+    font-size: 18px;
     color: white;
+    font-weight: bold;
     margin: 0;
 }
 
