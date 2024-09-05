@@ -1,0 +1,112 @@
+.about-section-content {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    margin-left: 700px;
+    min-height: 100vh;
+    position: relative; /* Relative positioning for the content container */
+    margin-top: 100px;
+}
+
+.about-us-left {
+    flex: 1;
+    max-width: 700px;
+    color: white;
+    position: relative; /* Ensures the text part acts as the reference for absolutely positioned images */
+}
+
+.about-heading {
+    color: #7A26C1;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.about-description {
+    color: lightgrey;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.about-icons {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.icon-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+}
+
+.icon-item p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+.about-button {
+    background-color: #7A26C1;
+    color: white;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #4ae19b;
+    color: #7A26C1;
+}
+
+/* Positioning for the individual images */
+.about-us-images {
+    position: absolute; /* This applies to the image container */
+    top: 0;
+    left: 0;
+}
+
+.about-img-1 {
+    position: absolute;
+    width: 450px; /* Adjust size as needed */
+    top: -30px; /* Adjust to control vertical positioning */
+    right: 30px; /* Adjust to control horizontal positioning */
+    z-index: 1; /* Ensure image 1 is beneath image 2 */
+}
+
+.about-img-2 {
+    position: absolute;
+    width: 300px; /* Adjust size as needed */
+    top: 250px; /* Adjust to control vertical positioning */
+    left: -150px; /* Adjust to control horizontal positioning */
+    z-index: 2; /* Bring image 2 on top of image 1 */
+    box-shadow: -15px -15px 0px black; /* Add a sharper shadow */
+}
+
+
+.about-img-3 {
+    position: absolute;
+    width: 400px; /* Adjust size as needed */
+    top: 20px; /* Adjust to control vertical positioning */
+    left: -600px; /* Adjust to control horizontal positioning */
+}
