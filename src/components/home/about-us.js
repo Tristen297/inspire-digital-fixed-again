@@ -9,7 +9,7 @@ function AboutSection() {
     return (
         <div className="about-section-content">
             <div className="about-us-images">
-                <img src={aboutShape} className="about-img-3" />
+                <img src={aboutShape} alt="geometric shape" className="about-img-3" />
                 <img src={aboutImg1} alt="man and woman talking to someone off camera" className="about-img-1" />
                 <img src={aboutImg2} alt="team crowded around a desk working together on something" className="about-img-2" />
             </div>
