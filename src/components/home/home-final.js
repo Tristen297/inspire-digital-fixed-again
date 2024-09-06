@@ -23,7 +23,7 @@ function HomeFinal() {
             </div>
             <div className="home-final-icon">
                 <a href="./">
-                    <img src={homeIcon} alt="svg image of an arrow" />  
+                    <img src={homeIcon} />  
                 </a>
             </div>
         </div>
