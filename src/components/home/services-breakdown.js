@@ -52,7 +52,7 @@ function ServicesBreakdown() {
                             World Class Customer Service
                         </h1>
                         <p>
-                            Call direct anytime day or night, no phone trees or automated responses.
+                            Contact us anytime day or night, no phone trees or automated responses.
                         </p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ function ServicesBreakdown() {
                             90+ Google Page Speed Score
                         </h1>
                         <p>
-                            We can achieve a 90 or better (out of 100) Google Page Speed scores and boost your search ranking.
+                            We can achieve a 90 or better (out of 100) Google Page Speed score and boost your search ranking.
                         </p>
                     </div>
                 </div>

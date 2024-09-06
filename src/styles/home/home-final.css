@@ -1,0 +1,89 @@
+/* General centering and layout */
+.home-final-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto; /* This will center the content horizontally */
+    text-align: center;
+    padding: 20px; /* Optional padding for responsiveness */
+    padding-top: 60px;
+}
+
+.home-final-text {
+    margin-bottom: 20px;
+    position: relative; /* This allows the text to be layered with z-index */
+    z-index: 2; /* Bring the main text to the front */
+}
+
+.home-final-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #7A26C1;
+}
+
+.home-final-text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    padding-top: 60px;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2; /* Ensures the main heading is above the "GET STARTED" text */
+}
+
+/* Styling for the absolute text */
+.home-final-abs-text {
+    position: absolute;
+    top: 70px; /* Adjust this value if needed */
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(23, 23, 23); /* Make the "GET STARTED" text semi-transparent */
+    z-index: 1; /* Position it behind the main text */
+    text-align: center;
+}
+
+/* Image in the middle */
+.home-final-picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    padding-right: 80px;
+    padding-top: 40px;
+}
+
+/* Absolute positioning for the icon */
+.home-final-icon {
+    position: absolute;
+    top: 380px; /* Adjust positioning as needed */
+    left: 940px;
+    background-color: #7A26C1;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+
+    /* Black border around the purple circle */
+    border: 15px solid black;
+
+    /* Flexbox to center the arrow icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Add hover effect to the whole circle */
+    transition: transform 0.5s ease; /* Smooth transition over 0.5 seconds */
+}
+
+.home-final-icon:hover {
+    transform: rotate(45deg); /* Rotate and scale the entire circle */
+}
+
+.home-final-icon img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(135deg); /* Initial rotation */
+    /* No need for hover on img, hover is on the container */
+}
+
+

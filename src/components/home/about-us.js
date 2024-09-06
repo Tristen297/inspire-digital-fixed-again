@@ -24,7 +24,7 @@ function AboutSection() {
                 <div className="about-icons">
                     <div className="icon-item">
                         <img src={brain} alt="Creative Team" />
-                        <p>Professional Creative Team Members</p>
+                        <p>Professional & Creative Team Members</p>
                     </div>
                     <div className="icon-item">
                         <img src={tools} alt="Market Service" />
