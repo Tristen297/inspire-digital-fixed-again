@@ -366,21 +366,24 @@
     }
 
     .navbar-content {
+        position: relative; /* Ensure navbar is positioned for z-index control */
         display: flex;
-        justify-content: flex-start; /* Align items to the left */
+        justify-content: flex-start;
         align-items: center;
         width: 100%; /* Full width of the navbar */
-        padding-left: 0; /* Remove left padding */
-        padding-right: 0; /* Remove right padding */
+        padding-left: 0;
+        padding-right: 0;
+        z-index: 100; /* Set a lower z-index for the navbar */
     }
 
     .main-nav-content {
         display: flex;
-        justify-content: flex-start; /* Align content to the left */
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
-        padding-left: 5px; /* Slight padding for spacing */
+        padding-left: 5px;
         margin-left: 0;
+        z-index: 100; /* Keep the content below the dropdown */
     }
 
     .nav-logo-full {
@@ -389,27 +392,29 @@
         flex-grow: 1; /* Allow the logo to grow */
     }
 
+    /* Dropdown Menu */
     .nav-links {
         max-height: 0; /* Initially hide the menu */
         opacity: 0;
         overflow: hidden;
         flex-direction: column; /* Stack links vertically */
         position: absolute;
-        top: 120px; /* Place it below the navbar */
+        top: 60px; /* Adjust to make sure the dropdown covers the content */
         left: 0;
         width: 100%; /* Full width */
         background-color: #11151c;
-        z-index: 1;
+        z-index: 9999; /* Highest z-index to ensure it's above everything */
         padding: 0;
         align-items: center;
-        transition: opacity 0.5s ease-in-out, max-height 0.6s ease-in-out; /* Use transition for smooth height and opacity change */
+        transition: opacity 0.5s ease-in-out, max-height 0.6s ease-in-out; /* Smooth height and opacity change */
     }
 
     .nav-links.open {
         max-height: 500px; /* Large enough to accommodate all links */
         opacity: 1;
         padding: 20px 0;
-        animation: dropdownBounce 0.8s ease forwards; /* Apply the bouncier dropdown animation */
+        animation: dropdownBounce 0.8s ease forwards;
+        z-index: 9999; /* Keep the dropdown on top when open */
     }
 
     .nav-links a {
@@ -420,12 +425,13 @@
     }
 
     .hamburger {
-        display: flex; /* Show the hamburger icon */
+        display: flex;
         cursor: pointer;
         flex-direction: column;
         justify-content: space-between;
         width: 30px;
         height: 21px;
+        z-index: 100; /* Ensure hamburger icon remains above main content */
     }
 
     .hamburger .bar {
@@ -434,7 +440,21 @@
         background-color: white;
         border-radius: 5px;
     }
+
+    /* Ensure "creative" and related elements are behind the dropdown */
+    .hero-text {
+        position: relative;
+        z-index: 1; /* Lower than dropdown */
+    }
+
+    .hero-text h1, .hero-text p { 
+        position: relative; 
+        z-index: 1; /* Ensure no overlap */
+    }
 }
+
+
+
 
 
 
