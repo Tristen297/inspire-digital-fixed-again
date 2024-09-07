@@ -222,3 +222,218 @@
     cursor: pointer;
     padding: 5px;
 }
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .navbar-content {
+        height: 60px; /* Further reduce the height of the navbar */
+        padding: 5px; /* Adjust padding if necessary */
+    }
+
+    .main-nav-content {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .nav-logo-full h1 {
+        font-size: 24px; /* Further reduce the font size of the text */
+    }
+
+    .menu-logo {
+        width: 35px; /* Further reduce the size of the logo */
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .navbar-content {
+        height: 80px; /* Reduce the height of the navbar */
+        padding: 5px; /* Adjust padding if necessary */
+    }
+
+    .main-nav-content {
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+
+    .nav-logo-full h1 {
+        font-size: 30px;
+    }
+
+    .menu-logo {
+        width: 45px; /* Reduce the size of the logo */
+        height: auto;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Hamburger icon styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Keyframes for a bouncier dropdown animation */
+@keyframes dropdownBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    70% {
+        transform: translateY(-10px);
+    }
+    85% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* For screens 1025px and below */
+@media (max-width: 1025px) {
+    .sidemenu-container {
+        display: none !important; /* Ensure the sidemenu is hidden */
+    }
+
+    .navbar-content {
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center;
+        width: 100%; /* Full width of the navbar */
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .main-nav-content {
+        display: flex;
+        justify-content: flex-start; /* Align content to the left */
+        align-items: center;
+        width: 100%;
+        padding-left: 5px; /* Slight padding for spacing */
+        margin-left: 0;
+    }
+
+    .nav-logo-full {
+        margin-left: 0;
+        padding-left: 0;
+        flex-grow: 1; /* Allow the logo to grow */
+    }
+
+    .nav-links {
+        max-height: 0; /* Initially hide the menu */
+        opacity: 0;
+        overflow: hidden;
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 120px; /* Place it below the navbar */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: #11151c;
+        z-index: 1;
+        padding: 0;
+        align-items: center;
+        transition: opacity 0.5s ease-in-out, max-height 0.6s ease-in-out; /* Use transition for smooth height and opacity change */
+    }
+
+    .nav-links.open {
+        max-height: 500px; /* Large enough to accommodate all links */
+        opacity: 1;
+        padding: 20px 0;
+        animation: dropdownBounce 0.8s ease forwards; /* Apply the bouncier dropdown animation */
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .hamburger .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .main-nav-content {
+        padding-right: 50px;
+    }
+
+    .nav-logo-full h1 {
+        font-size: 36px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+}
