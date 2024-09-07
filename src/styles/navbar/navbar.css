@@ -231,9 +231,16 @@
     }
 
     .main-nav-content {
-        flex-direction: column;
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between;
+        align-items: center; /* Vertically align logo and hamburger menu */
+        width: 100%; /* Ensure the content spans the full width */
+        padding-right: 10px; /* Adjust padding on the right */
+    }
+
+    .nav-logo-full {
+        display: flex;
         align-items: center;
-        padding-right: 10px;
     }
 
     .nav-logo-full h1 {
@@ -243,6 +250,14 @@
     .menu-logo {
         width: 35px; /* Further reduce the size of the logo */
         height: auto;
+    }
+
+    .hamburger {
+        display: flex; /* Ensure the hamburger menu stays visible */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 18px;
     }
 
     .nav-links {
@@ -255,6 +270,7 @@
         padding: 8px 0;
     }
 }
+
 
 
 
