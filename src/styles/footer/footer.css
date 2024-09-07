@@ -1,0 +1,140 @@
+.footer-content {
+    background-color: #0d0e10; /* Dark background */
+    color: #ffffff;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+    z-index: 1; /* Ensure the footer content is above the background */
+    margin-top: 80px;
+}
+
+/* Background shape container */
+.footer-bg-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+    z-index: -1; /* Ensure it stays behind the footer content */
+}
+
+.footer-bg-shape img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the background nicely */
+}
+
+/* Flexbox for centering logo and text */
+.logo-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    width: 80px;
+    height: auto;
+    margin-right: 0px;
+}
+
+.footer-content .logo-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+    margin-left: 0px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 0px;
+}
+
+.footer-main div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-content h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-content h1:not(.logo-text)::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: #7A26C1;
+    top: 40px;
+    left: 0;
+}
+
+.main-company-col a {
+    display: block;
+    color: lightgrey;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-company-col a:hover {
+    color: #4ae19b;
+}
+
+.working-hours-col p, .contact-us-col p {
+    margin: 5px 0;
+    color: lightgrey;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-main div {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
