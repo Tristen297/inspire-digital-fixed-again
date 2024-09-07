@@ -243,13 +243,15 @@
         align-items: center;
     }
 
-    .nav-logo-full h1 {
-        font-size: 24px; /* Further reduce the font size of the text */
-    }
-
     .menu-logo {
         width: 35px; /* Further reduce the size of the logo */
         height: auto;
+        margin-right: 5px; /* Reduce space between the logo and the text */
+    }
+
+    .nav-logo-full h1 {
+        font-size: 24px; /* Further reduce the font size of the text */
+        margin-left: 0; /* Remove any default left margin */
     }
 
     .hamburger {
@@ -270,6 +272,7 @@
         padding: 8px 0;
     }
 }
+
 
 
 
