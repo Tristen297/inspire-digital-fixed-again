@@ -1,0 +1,166 @@
+/* Main Navbar Container */
+.navbar-alt-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Background color change when scrolled */
+.navbar-alt-content.scrolled {
+    background-color: #333;
+}
+
+/* Logo and text in the navbar */
+.nav-alt-logo {
+    display: flex;
+    align-items: center;
+    margin: 2vw;
+}
+
+.nav-alt-logo h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    margin-left: 0;
+    white-space: nowrap;
+    color: white;
+}
+
+.menu-logo-alt {
+    width: 60px;
+    height: auto;
+}
+
+/* Navigation Links */
+.nav-alt-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-alt-links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 5px 15px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-alt-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7A26C1;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.nav-alt-links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    background-color: #4ae19b;
+}
+
+.nav-alt-links a:hover {
+    color: #7A26C1;
+}
+
+/* Media Queries */
+
+/* Mobile devices: max-width 480px */
+@media (max-width: 480px) {
+    .nav-alt-content {
+        height: 100vh;
+    }
+    .nav-alt-logo h1 {
+        font-size: 24px;
+    }
+
+    .nav-alt-links a {
+        font-size: 14px;
+    }
+}
+
+/* Mobile and tablet: max-width 768px */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 50%; /* Center vertically */
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 2000;
+        color: white;
+        align-items: center;
+    }
+
+    .nav-alt-links {
+        display: none;
+    }
+
+    .nav-alt-links.open {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+/* Larger screens: min-width 769px */
+@media (min-width: 769px) {
+    .nav-alt-links {
+        display: flex; /* Show links on larger screens */
+    }
+
+    .hamburger-menu {
+        display: none !important; /* Hide hamburger on larger screens */
+    }
+}
+
+
+/* Large tablets and small desktops: max-width 1025px */
+@media (max-width: 1025px) {
+    .nav-alt-logo {
+        margin: 1vw;
+    }
+
+    .nav-alt-logo h1 {
+        font-size: 30px;
+    }
+
+    .menu-logo-alt {
+        width: 50px;
+    }
+}
+
+/* Desktops and larger devices: min-width 1025px */
+@media (min-width: 1025px) {
+    .nav-alt-logo h1 {
+        font-size: 35px;
+    }
+
+    .nav-alt-links a {
+        font-size: 18px;
+    }
+}

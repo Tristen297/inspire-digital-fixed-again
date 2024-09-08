@@ -66,7 +66,6 @@
 .menu-logo {
     width: 60px;
     height: auto;
-    margin-right: 10px; /* Space between the logo and the text */
 }
 
 .nav-logo-full h1 {
@@ -274,16 +273,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Tablets and smaller screens */
 @media (max-width: 768px) {
     .navbar-content {
@@ -310,16 +299,6 @@
         padding: 10px 15px;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Hamburger icon styles */
 .hamburger {
@@ -452,16 +431,6 @@
         z-index: 1; /* Ensure no overlap */
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Desktops */
 @media (min-width: 1025px) {
