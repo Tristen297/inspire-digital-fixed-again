@@ -74,6 +74,6 @@
 
     .services-text::before {
         height: 50px; /* Thinner line for small screens */
-        bottom: 45px; /* Adjust line positioning */
+        bottom: 20px; /* Adjust line positioning */
     }
 }
