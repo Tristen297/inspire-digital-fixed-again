@@ -35,7 +35,14 @@
 .menu-logo-alt {
     width: 60px;
     height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
 }
+
+.menu-logo-alt:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow to create a pop effect */
+}
+
 
 /* Navigation Links */
 .nav-alt-links {

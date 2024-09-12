@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(45deg, #7b26c185 15%, transparent 15%), /* Adjusted gradient direction */
+        linear-gradient(45deg, #7b26c1b3 15%, transparent 15%), /* Adjusted gradient direction */
         linear-gradient(45deg, rgba(74, 74, 74, 0.522) 30%, transparent 30%), /* Adjusted gradient direction */
         url('../../images-and-icons/meeting.jpg'); /* Background image */
     background-size: cover;

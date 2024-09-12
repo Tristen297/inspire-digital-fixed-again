@@ -30,7 +30,10 @@ function NavbarAlt() {
     return (
         <div className={`navbar-alt-content ${isScrolled ? 'scrolled' : ''}`}>
             <div className="nav-alt-logo">
-                <img src={logoIcon} alt="logo icon for inspire digital" className="menu-logo-alt" />
+                {/* Wrapped the logo in an anchor tag to link to the home page */}
+                <a href="./">
+                    <img src={logoIcon} alt="logo icon for inspire digital" className="menu-logo-alt" />
+                </a>
                 <h1>Inspire Digital</h1>
             </div>
 
