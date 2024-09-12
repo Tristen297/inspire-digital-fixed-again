@@ -1,20 +1,30 @@
 .services-hero-content {
+    margin: 0;
+    padding: 0;
     position: relative;
     z-index: 1;
     width: 100%;
     height: 600px;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
 }
 
 .services-bg-img {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(45deg, #7b26c1b3 15%, transparent 15%), /* Adjusted gradient direction */
-        linear-gradient(45deg, rgba(74, 74, 74, 0.522) 30%, transparent 30%), /* Adjusted gradient direction */
-        url('../../images-and-icons/meeting.jpg'); /* Background image */
+        linear-gradient(45deg, #7b26c1b3 15%, transparent 15%),
+        linear-gradient(45deg, rgba(74, 74, 74, 0.522) 30%, transparent 30%),
+        url('../../images-and-icons/meeting.jpg');
     background-size: cover;
     background-position: center;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .services-bg-img::before {
@@ -24,23 +34,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to darken image */
-    z-index: 1; /* Ensure it's on top of the image but below the text and shapes */
-}
-
-.services-shape-1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    z-index: 2;
-}
-
-.services-shape-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     z-index: 2;
 }
 
@@ -50,4 +44,32 @@
     text-align: center;
     color: white;
     font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Ensure it behaves as an inline element */
+}
+
+/* Add the line behind the text */
+.services-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Adjust based on how far you want the line below the text */
+    width: 100%;
+    height: 2px; /* Line thickness */
+    background: linear-gradient(to right, transparent, #7A26C1); /* Gradient effect */
+    z-index: -1; /* Ensure it's behind the text */
+    transform: translateY(10px); /* Adjust position if needed */
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .services-text {
+        font-size: 1.5rem; /* Smaller text size for small screens */
+    }
+
+    .services-text::before {
+        height: 1px; /* Thinner line for small screens */
+        bottom: -8px; /* Adjust line positioning */
+    }
 }
