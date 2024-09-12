@@ -73,7 +73,7 @@
     }
 
     .services-text::before {
-        height: 1px; /* Thinner line for small screens */
-        bottom: -8px; /* Adjust line positioning */
+        height: 50px; /* Thinner line for small screens */
+        bottom: 65px; /* Adjust line positioning */
     }
 }
