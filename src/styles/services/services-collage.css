@@ -1,0 +1,50 @@
+.services-sec-1 {
+    display: flex;
+    align-items: center; /* Vertically align the items */
+    justify-content: flex-start; /* Aligns the items to the left with less space in between */
+}
+
+.services-ill-1 {
+    max-width: 40vw; /* Adjust the width of the image */
+    margin-right: 2vw; /* Add a small margin to the right of the image */
+    margin-left: 10vw;
+}
+
+.services-text-1 {
+    color: white;
+    width: 600px;
+    padding-left: 10px; /* Reduce padding to make the gap smaller */
+    margin-right: 0; /* Remove margin-right to bring the text closer */
+}
+
+.services-text-1 p {
+    color: lightgrey; /* Set the font color to light grey */
+    line-height: 2; /* Increase the line height */
+    font-weight: bold;
+}
+
+
+.services-text-1 h1 {
+    font-size: 40px; /* Desired font size */
+    font-weight: 700; /* Desired font weight */
+    line-height: 1.2; /* Desired line height */
+    margin-bottom: 30px; /* Desired bottom margin */
+}
+
+.p-1 {
+    margin-bottom: 20px; /* Adds a noticeable gap below the first paragraph */
+}
+
+.p-2 {
+    margin-top: 0; /* Ensures there’s no additional margin at the top of the second paragraph */
+}
+
+.highlight-text {
+    color: #4ae19b; /* Set the color for "Done Differently" */
+}
+
+.purple-text {
+    color: #4ae19b; /* Set the color to purple */
+}
+
+

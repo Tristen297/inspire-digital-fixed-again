@@ -1,0 +1,50 @@
+.transition-container {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Adjust height as necessary */
+    margin-bottom: 200px;
+}
+
+.dashed-line {
+    position: absolute;
+    border: none;
+    border-style: dashed;
+    border-color: #ccc; /* Choose the color you prefer */
+}
+
+.dashed-line-vertical {
+    border-left: 1px dashed #ccc;
+    height: 100px; /* Adjust the height of the vertical line */
+    left: 20vw; /* Position of the first vertical line */
+    top: 0; /* Align to top */
+    width: 0;
+}
+
+.dashed-line-horizontal {
+    border-top: 1px dashed #ccc;
+    width: 55.5%; /* Adjust the width of the horizontal line */
+    left: 20vw;
+    top: 100px; /* Align to the bottom of the vertical line */
+}
+
+/* Second Vertical Line */
+.dashed-line-vertical-2 {
+    position: relative; /* Make this relative to contain the arrow */
+    border-left: 1px dashed #ccc;
+    height: 100px; /* Same height as the other vertical line */
+    left: 75vw; /* Adjust the position as needed */
+    top: 100px; /* Align to top */
+    width: 0;
+}
+
+.styled-arrow-1 {
+    position: absolute;
+    left: calc(73vw - ((1900px - 100vw) * 0.02)); /* Adjust dynamically starting from 1900px */
+    bottom: -150px; /* Adjust bottom value to align it better with the dashed line */
+    transform: rotate(90deg); /* Rotate the arrow */
+    height: 80px; /* Set the height of the arrow to 80px */
+}
+
+
+
+
