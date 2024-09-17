@@ -1,7 +1,8 @@
 import "../../styles/services/services-collage.css";
 import TransitionComp1 from "./transition-comp-1";
+import TransitionComp2 from "./transition-comp-2";
 import servicesImg1 from "../../images-and-icons/services-ill-8.svg";
-import servicesImg2 from "../../images-and-icons/services-ill-5.svg";
+import servicesImg2 from "../../images-and-icons/services-ill-9.svg";
 import servicesImg3 from "../../images-and-icons/services-ill-6.svg";
 import checkMark from "../../images-and-icons/check-mint.svg"
 
@@ -27,13 +28,13 @@ function ServicesCollage() {
             <div className="services-sec-2">
                 <div className="services-text-2">
                     <h1>
-                        Search Engine Optimization For 2021
+                        Search Engine Optimization <span className="highlight-seo">(SEO)</span>
                     </h1>
-                    <p>
+                    <p className="services-p-1">
                         If someone tells you they can get you to the front page of Google in 3 months - RUN! Unless your website was featured by The New York Times it could take years to rank in the top of the search results.
                     </p>
-                    <p>
-                        We offer a number of the latest search engine optimization techniques for 2021:
+                    <p className="services-p-2">
+                        We offer a number of the latest search engine optimization techniques to make your web presence grow as quickly as possible:
                     </p>
                     <div className="sec-2-list">
                         <div className="services-line-item">
@@ -64,6 +65,7 @@ function ServicesCollage() {
                 </div>
                 <img src={servicesImg2} alt="" className="services-ill-2" />
             </div>
+            <TransitionComp2 />
             <div className="services-sec-3">
                 <img src={servicesImg3} alt="" className="services-ill-3" />
                 <div className="services-text-3">

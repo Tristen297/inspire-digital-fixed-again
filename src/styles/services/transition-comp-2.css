@@ -1,0 +1,41 @@
+.transition-container-2 {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Adjust height as necessary */
+    margin-bottom: 200px;
+}
+
+.dashed-line-vertical-2a {
+    border-right: 1px dashed #ccc; /* Use border-right to flip the vertical line */
+    height: 100px; /* Adjust the height of the vertical line */
+    right: 20vw; /* Position it on the right side */
+    top: 0; /* Align to top */
+    position: absolute;
+    width: 0;
+}
+
+.dashed-line-horizontal-2a {
+    border-top: 1px dashed #ccc;
+    width: 55.5%; /* Adjust the width of the horizontal line */
+    right: 20vw; /* Align to the bottom of the vertical line */
+    top: 100px;
+    position: absolute;
+}
+
+.dashed-line-vertical-2b {
+    border-right: 2px dashed #ccc; /* Flip the second vertical line to the right */
+    height: 100px; /* Same height as the other vertical line */
+    right: 75vw; /* Adjust the position to the right side */
+    top: 100px; /* Align to top */
+    position: absolute;
+    width: 0;
+}
+
+/* Arrow Styling */
+.styled-arrow-2a {
+    position: absolute;
+    left: calc(22vw - ((1900px - 100vw) * 0.032));
+    top: 220px; /* Align it to the bottom of the second vertical line */
+    transform: rotate(90deg); /* Rotate the arrow to point left */
+    height: 80px; /* Adjust the height of the arrow */
+}
