@@ -6,27 +6,27 @@
 }
 
 .dashed-line-vertical-2a {
-    border-right: 1px dashed #ccc; /* Use border-right to flip the vertical line */
-    height: 100px; /* Adjust the height of the vertical line */
-    right: 20vw; /* Position it on the right side */
-    top: 0; /* Align to top */
+    border-right: 1px dashed #ccc;
+    height: 100px;
+    right: 20vw; /* Position the line on the right side */
+    top: 0;
     position: absolute;
     width: 0;
 }
 
 .dashed-line-horizontal-2a {
     border-top: 1px dashed #ccc;
-    width: 55.5%; /* Adjust the width of the horizontal line */
-    right: 20vw; /* Align to the bottom of the vertical line */
+    width: 55.5%;
+    right: 20vw;
     top: 100px;
     position: absolute;
 }
 
 .dashed-line-vertical-2b {
-    border-right: 2px dashed #ccc; /* Flip the second vertical line to the right */
-    height: 100px; /* Same height as the other vertical line */
+    border-right: 2px dashed #ccc;
+    height: 100px;
     right: 75vw; /* Adjust the position to the right side */
-    top: 100px; /* Align to top */
+    top: 100px;
     position: absolute;
     width: 0;
 }
@@ -34,8 +34,8 @@
 /* Arrow Styling */
 .styled-arrow-2a {
     position: absolute;
-    left: calc(22vw - ((1900px - 100vw) * 0.032));
-    top: 220px; /* Align it to the bottom of the second vertical line */
+    right: calc(73vw - ((1900px - 100vw) * 0.02)); /* Adjust dynamically based on screen width */
+    top: 220px; /* Adjust top value to align with the vertical line */
     transform: rotate(90deg); /* Rotate the arrow to point left */
-    height: 80px; /* Adjust the height of the arrow */
+    height: 80px; /* Set the height of the arrow */
 }
