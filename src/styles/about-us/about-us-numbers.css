@@ -1,0 +1,68 @@
+.about-us-numbers-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 10px;
+    gap: 30px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.number-section {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #4ae19b; /* Changed to the new green color */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 
+        0 0 0 10px rgba(74, 225, 155, 0.3),  /* Adjusted shades of green */
+        0 0 0 20px rgba(74, 225, 155, 0.2), 
+        0 0 0 30px rgba(74, 225, 155, 0.1);
+}
+
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.number-subtext {
+    font-size: 1rem;
+    font-weight: 400;
+    color: lightgrey;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-us-numbers-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cta-button {
+    align-self: center;
+}

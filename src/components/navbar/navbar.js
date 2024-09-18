@@ -25,7 +25,7 @@ function Navbar() {
                 <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                     <Link to="/">Home</Link> {/* Link to Home */}
                     <Link to="/services">Services</Link> {/* Link to Services */}
-                    <Link to="/about">About Us</Link> {/* Link to About Us */}
+                    <Link to="/about-us">About Us</Link> {/* Link to About Us */}
                     <Link to="/contact">Contact</Link> {/* Link to Contact */}
                 </div>
 

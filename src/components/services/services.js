@@ -1,6 +1,8 @@
 import NavbarAlt from "../navbar/navbar-alt"
 import ServicesHero from "./services-hero"
 import ServicesCollage from "./services-collage"
+import HomeFinal from "../home/home-final"
+import LifetimeUpdates from "./lifetime-updates"
 
 function Services() {
     return(
@@ -8,6 +10,8 @@ function Services() {
             <NavbarAlt />
             <ServicesHero />
             <ServicesCollage />
+            <LifetimeUpdates />
+            <HomeFinal />
         </div>
     )
 }

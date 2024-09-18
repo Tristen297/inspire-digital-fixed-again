@@ -1,3 +1,7 @@
+.services-collage-content {
+    margin-bottom: 100px;
+}
+
 .services-sec-1 {
     display: flex;
     align-items: center;
@@ -8,7 +12,7 @@
 
 .services-ill-1 {
     max-width: 800px; /* Adjust the width of the image */
-    margin-right: 2vw; /* Add a small margin to the right of the image */
+    margin-right: 0vw; /* Add a small margin to the right of the image */
     margin-left: auto;
     flex-shrink: 0; /* Prevent the image from shrinking */
 }
@@ -111,4 +115,71 @@
 
 .highlight-seo {
     color: #4ae19b;
+}
+
+/* Section 3 Styling */
+.services-sec-3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1; /* Allow the whole section to shrink */
+    margin-top: 8vh;
+}
+
+.services-ill-3 {
+    max-width: 800px; /* Adjust the width of the image */
+    margin-left: auto; /* Add a small margin to the right of the image */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 40px;
+}
+
+.services-text-3 {
+    color: white;
+    width: 600px;
+    padding-left: 10px;
+    margin-right: auto; /* Ensure the text stays centered until there is no more space */
+    flex-shrink: 1; /* Allow text to shrink */
+}
+
+.services-text-3 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.services-text-3 p {
+    color: lightgrey;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.services-line-item-sec-3 {
+    display: flex; /* Use Flexbox to position the icon and text side by side */
+    align-items: flex-start; /* Align items at the top (icon and text block) */
+    margin-bottom: 20px; /* Add space between each section */
+    margin-top: 20px;
+}
+
+.services-line-item-sec-3 .text-content {
+    display: block; /* Stack the h5 and p vertically */
+}
+
+.services-line-item-sec-3 h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px; /* Add space between the h5 and the p element */
+}
+
+.services-line-item-sec-3 p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.check-mark-icon-2 {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
 }

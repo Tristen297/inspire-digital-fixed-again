@@ -1,0 +1,86 @@
+.lifetime-updates-content {
+    display: flex;
+    justify-content: space-between; /* Ensure sections are aligned horizontally */
+    align-items: center; /* Vertically center the content */
+    margin: 50px auto; /* Add margin to the top and bottom, auto centers horizontally */
+    padding: 20px;
+    max-width: 1200px; /* Limit the max width of the section */
+    gap: 20px; /* Add space between the text and square sections */
+    margin-bottom: 200px;
+}
+
+/* Styling for the text section */
+.text-section {
+    width: 45%; /* Give some space to the text section */
+    margin-left: auto; /* Automatically adjust the margin on the left */
+    color: white;
+}
+
+.text-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: lightgrey;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    color: #4ae19b; /* Highlight color for emphasized text */
+}
+
+.about-button {
+    background-color: #7A26C1;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #4ae19b;
+    color: #7A26C1;
+}
+
+/* Styling for the square section */
+.square-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Display two square contents per row */
+    gap: 20px; /* Add space between the square contents */
+    width: 45%; /* Set the width to 45% to match the text section */
+    margin-right: auto; /* Automatically adjust the margin on the right */
+}
+
+.square-content {
+    background-color: #2c2c2c; /* Dark background color for the square */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.square-content img {
+    max-width: 50px; /* Set a max width for the icons */
+    margin-bottom: 10px;
+}
+
+.square-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.square-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: lightgrey;
+}

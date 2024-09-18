@@ -1,0 +1,77 @@
+.about-us-hero-content {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(45deg, #7b26c1b3 15%, transparent 15%),
+        linear-gradient(45deg, rgba(74, 74, 74, 0.522) 30%, transparent 30%),
+        url('../../images-and-icons/about-us-hero.jpg'); /* You can update the image file here */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 2;
+}
+
+.about-us-text {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.about-us-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, transparent, #7A26C1);
+    z-index: -1;
+    transform: translateY(10px);
+}
+
+@media (max-width: 480px) {
+    .about-us-hero-content {
+        height: 100vh;
+    }
+
+    .about-us-text {
+        font-size: 1.5rem;
+    }
+
+    .about-us-text::before {
+        height: 50px;
+        bottom: 20px;
+    }
+}

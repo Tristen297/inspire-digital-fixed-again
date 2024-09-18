@@ -15,7 +15,6 @@ function Home() {
             <AboutSection />
             <ServicesBreakdown />
             <HomeFinal />
-            <Footer />
         </div>
     )
 }

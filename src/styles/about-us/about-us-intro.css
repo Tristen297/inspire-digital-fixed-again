@@ -1,0 +1,99 @@
+.about-us-intro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+ 
+.about-us-intro-img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-intro-text {
+    width: 60%;
+    padding-left: 40px;
+}
+
+/* Subtext styled like the .welcome-text */
+.about-us-subtitle {
+    color: #7A26C1;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-us-intro-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-us-intro-main, .about-us-intro-main-2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: lightgrey;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us-intro-main-2 {
+    color: lightgrey;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about-us-intro-content {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .about-us-intro-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-us-intro-text {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .about-us-intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-us-subtitle {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-intro-content {
+        padding: 20px;
+    }
+
+    .about-us-intro-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-us-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-us-intro-main, .about-us-intro-main-2 {
+        font-size: 0.9rem;
+    }
+}
