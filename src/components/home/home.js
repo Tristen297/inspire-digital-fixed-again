@@ -4,7 +4,7 @@ import ServicesSection from "./services-section";
 import AboutSection from "./about-us";
 import ServicesBreakdown from "./services-breakdown";
 import HomeFinal from "./home-final";
-import Footer from "../footer/footer";
+
 
 function Home() {
     return(
