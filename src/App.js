@@ -4,11 +4,13 @@ import Home from './components/home/home';
 import Services from './components/services/services';
 import AboutUs from './components/about-us/about-us';
 import ContactUs from './components/contact-us/contact-us';
-import Footer from './components/footer/footer'; 
+import Footer from './components/footer/footer';
+import ScrollToTop from './components/scroll-to-top';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />  {/* Ensure this is inside Router */}
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/home/hero.css";
 import heroPic from "../../images-and-icons/man-on-computer.png";
 
@@ -22,7 +23,9 @@ function Hero() {
                 <p className="description">
                     Specializing in web design & development, we craft visually stunning,<br /> high-performing websites that drive success and profitability.
                 </p>
-                <button className="cta-button">Get Started Now</button>
+                <Link to="/contact-us">
+                    <button className="cta-button">Get Started Now</button>
+                </Link>
             </div>
         </div>
     );
