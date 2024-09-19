@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/home/home';
 import Services from './components/services/services';
 import AboutUs from './components/about-us/about-us';
+import ContactUs from './components/contact-us/contact-us';
 import Footer from './components/footer/footer'; 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </div>

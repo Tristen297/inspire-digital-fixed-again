@@ -26,11 +26,11 @@ function Footer() {
                     <h1 className="company-col-title">Company</h1>
                     <Link to="/">Home</Link> {/* Link to Home page */}
                     <Link to="/services">Services</Link> {/* Link to Services page */}
-                    <Link to="/about">About Us</Link> {/* Example route for About Us */}
-                    <Link to="/contact">Contact Us</Link> {/* Example route for Contact Us */}
+                    <Link to="/about-us">About Us</Link> {/* Example route for About Us */}
+                    <Link to="/contact-us">Contact Us</Link> {/* Example route for Contact Us */}
                 </div>
                 <div className="working-hours-col">
-                    <h1 className="hours-col-title">Working Time</h1>
+                    <h1 className="hours-col-title">Working Times</h1>
                     <p>Mon-Fri: 9:00AM-5:00PM EST</p>
                     <p>Saturday & Sunday: Closed</p>
                 </div>

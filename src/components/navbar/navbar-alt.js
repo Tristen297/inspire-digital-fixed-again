@@ -42,7 +42,7 @@ function NavbarAlt() {
                 <Link to="/">Home</Link>
                 <Link to="/services">Services</Link>
                 <Link to="/about-us">About Us</Link> 
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact-us">Contact</Link>
             </div>
 
             {/* Hamburger Icon */}
