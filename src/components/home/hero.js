@@ -21,7 +21,7 @@ function Hero() {
                 <p className="welcome-text">WELCOME TO OUR STUDIO</p>
                 <h1 className="main-heading">Digital Creative <br /> Studio</h1>
                 <p className="description">
-                    Specializing in web design & development, we craft visually stunning,<br /> high-performing websites that drive success and profitability.
+                    Specializing in web design & development, we craft visually stunning, high-performing websites that drive success and profitability.
                 </p>
                 <Link to="/contact-us">
                     <button className="cta-button">Get Started Now</button>

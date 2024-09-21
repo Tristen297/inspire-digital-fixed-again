@@ -1,11 +1,13 @@
-/* hero.css */
-
 .hero-content {
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Ensure content aligns to the top */
+    justify-content: flex-start; /* Ensure content is aligned to the top */
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Ensure no margin */
 }
+
 
 .social-links {
     position: absolute;
@@ -33,14 +35,14 @@
 }
 
 .hero-picture {
-    position: absolute;
-    top: 0px;
-    left: 110px;
-    padding: 0;
+    position: relative;
+    margin-left: 110px;
+    margin-top: 0px;
+    padding-top:0px;
 }
 
 .hero-picture img {
-    max-width: 100%;
+    max-width: 50vw;
     height: auto;
     display: block;
 }
@@ -66,7 +68,7 @@
     position: absolute;
     bottom: 30px;
     left: 850px;
-    font-size: 10rem; 
+    font-size: 10rem;
     color: rgb(37, 37, 37);
     font-weight: bold;
     z-index: 0;
@@ -74,9 +76,9 @@
 
 /* Styling for the text section */
 .hero-content-text {
-    position: absolute;
-    left: 1050px;
-    top: 200px;
+    position: relative;
+    margin-top: 80px; /* Reset margin-top */
+    margin-left: 40px;
     color: white;
 }
 
@@ -97,6 +99,7 @@
     font-size: 1rem;
     color: lightgrey;
     margin-bottom: 50px;
+    padding-right: 200px;
 }
 
 .cta-button {
@@ -116,3 +119,172 @@
     background-color: #4ae19b;
     color: #7A26C1;
 }
+
+
+
+
+@media only screen and (max-width: 1719px) {
+    .description {
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1679px) {
+    .social-links {
+        top: 130px; /* Reduce top position */
+        gap: 70px; /* Reduce gap between links */
+    }
+    
+    .hero-text {
+        font-size: 8vw; /* Start shrinking text after 1679px */
+        bottom: 5%; /* Adjust the position to move with the image */
+        left: 23%;
+    }
+
+    .agency-text {
+        font-size: 8vw; /* Shrink agency text */
+        bottom: 5%;
+        left: 103%;
+    }
+}
+
+/* Media query for screen width < 1550px */
+@media only screen and (max-width: 1550px) {
+    .social-links {
+        top: 110px; /* Further reduce top position */
+        gap: 60px; /* Further reduce gap between links */
+    }
+    
+    .hero-content-text {
+        margin-top: 60px; /* Reduce margin-top */
+        margin-left: 30px; /* Reduce margin-left */
+    }
+
+    .hero-content-text .welcome-text {
+        font-size: 0.9rem; /* Shrink welcome-text */
+    }
+
+    .hero-content-text .main-heading {
+        font-size: 4rem; /* Shrink main-heading */
+    }
+
+    .hero-content-text .description {
+        font-size: 1rem; /* Shrink description */
+    }
+
+    .hero-content-text .cta-button {
+        font-size: 0.9rem; /* Shrink CTA button */
+        padding: 10px 20px; /* Adjust padding */
+    }
+}
+
+/* Media query for screen width < 1330px */
+@media only screen and (max-width: 1330px) {
+    .social-links {
+        top: 90px; /* Further reduce top position */
+        gap: 50px; /* Further reduce gap between links */
+    }
+    
+    .hero-content-text {
+        margin-top: 40px; /* Further reduce margin-top */
+        margin-left: 20px; /* Further reduce margin-left */
+    }
+
+    .hero-content-text .welcome-text {
+        font-size: 0.8rem; /* Further shrink welcome-text */
+    }
+
+    .hero-content-text .main-heading {
+        font-size: 3.5rem; /* Further shrink main-heading */
+    }
+
+    .hero-content-text .description {
+        font-size: 1rem; /* Further shrink description */
+    }
+
+    .hero-content-text .cta-button {
+        font-size: 0.8rem; /* Further shrink CTA button */
+        padding: 8px 18px; /* Adjust padding further */
+    }
+}
+
+@media only screen and (max-width: 1165px) {
+    .social-links {
+        display: none; /* Hide the social links */
+    }
+
+    .hero-picture{
+        margin-left: 0px;
+    }
+}
+
+/* Media query for screen width < 950px */
+@media only screen and (max-width: 950px) {
+    .hero-content {
+        flex-direction: column-reverse; 
+        align-items: flex-start; 
+        justify-content: flex-start;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .hero-content-text {
+        margin-top: 0 !important;
+        padding-top: 0;
+        margin-left: 20px;
+        text-align: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content-text .main-heading {
+        font-size: 2rem; /* Reduce main heading font size */
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+
+    .hero-content-text .description {
+        font-size: 1rem; /* Reduce description font size */
+        margin-bottom: 30px; /* Adjust margin to create some space */
+        padding-right: 0px;
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Reduce button text size */
+        padding: 12px 24px; /* Adjust padding for smaller screens */
+    }
+
+    .hero-picture {
+        width: 100vw; /* Force the container to take the full viewport width */
+        margin-left: 0; 
+        margin-right: 0; 
+        margin-top: 0; 
+        position: relative;
+    }
+
+    .hero-picture img {
+        max-width: 90vw; /* Override the previous max-width */
+        height: auto;
+        display: block;
+        margin-left: 20px;
+        margin-right: auto;
+        margin-bottom: 20vh;
+    }
+
+    .hero-text, 
+    .agency-text {
+        display: none;
+    }
+
+    .welcome-text {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
