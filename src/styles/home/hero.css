@@ -1,6 +1,6 @@
 .hero-content {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     align-items: flex-start; /* Ensure content aligns to the top */
     justify-content: flex-start; /* Ensure content is aligned to the top */

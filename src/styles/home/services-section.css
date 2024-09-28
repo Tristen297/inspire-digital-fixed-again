@@ -1,15 +1,17 @@
 /* Services section content */
 .services-section-content {
     position: relative;
-    margin-top: 0px;
-    padding: 50px 0;
+    margin-top: 10%;
+    padding: 50px auto;
     color: white;
     text-align: left;
     overflow: hidden;
 }
 
 .services-section-text {
-    margin-left: 200px;
+    margin: 0 auto; /* Center the text container horizontally */
+    text-align: center; /* Center the text inside the container */
+    max-width: 80%; /* Control the width of the text block */
     position: relative;
 }
 
@@ -30,10 +32,9 @@
 
 .service-section-boxes {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; /* Center content inside */
+    margin: 0 auto; /* Center the entire element horizontally */
     margin-top: 50px;
-    padding-left: 200px;
-    padding-right: 20px;
     gap: 10px;
     position: relative;
 }
@@ -145,3 +146,110 @@
     border-radius: 5px;
     z-index: 2; /* Make sure icons are above the overlay */
 }
+
+/* Media Queries */
+
+/* Mobile devices - max-width: 480px */
+@media only screen and (max-width: 480px) {
+    .services-section-text p {
+        font-size: 0.8rem;
+    }
+
+    .services-section-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-section-boxes .box-1::after,
+    .service-section-boxes .box-2::after,
+    .service-section-boxes .box-3::after,
+    .service-section-boxes .box-4::after {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+/* Media query for screens with max-width 720px */
+@media only screen and (max-width: 720px) {
+    .services-section-text p {
+        font-size: 0.9rem;
+    }
+
+    .services-section-text h1 {
+        font-size: 3rem;
+    }
+
+    .service-section-boxes .box-1,
+    .service-section-boxes .box-2,
+    .service-section-boxes .box-3,
+    .service-section-boxes .box-4 {
+        height: 33vh;  /* Set the height of the boxes to 33% of the viewport height */
+        width: 100%;  /* Ensure the boxes take up full width on smaller screens */
+        margin-right: 0;  /* Remove right margin */
+    }
+
+    .service-section-boxes {
+        flex-wrap: wrap;  /* Allow the boxes to wrap to new lines */
+    }
+
+    .service-section-boxes .box-1::after,
+    .service-section-boxes .box-2::after,
+    .service-section-boxes .box-3::after,
+    .service-section-boxes .box-4::after {
+        font-size: 14px;
+        padding: 18px;
+    }
+}
+
+
+/* Tablets - max-width: 768px */
+@media only screen and (max-width: 768px) {
+    .services-section-text p {
+        font-size: 0.9rem;
+    }
+
+    .services-section-text h1 {
+        font-size: 4rem;
+    }
+
+    .service-section-boxes .box-1::after,
+    .service-section-boxes .box-2::after,
+    .service-section-boxes .box-3::after,
+    .service-section-boxes .box-4::after {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .services-section-text p {
+        font-size: 1rem;
+    }
+
+    .services-section-text h1 {
+        font-size: 5rem;
+    }
+
+    .service-section-boxes .box-1::after,
+    .service-section-boxes .box-2::after,
+    .service-section-boxes .box-3::after,
+    .service-section-boxes .box-4::after {
+        font-size: 18px;
+        padding: 22px;
+    }
+
+    /* Stack the boxes in two rows of two */
+    .service-section-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-section-boxes .box-1,
+    .service-section-boxes .box-2,
+    .service-section-boxes .box-3,
+    .service-section-boxes .box-4 {
+        width: 45%;  /* Adjust the width to fit two boxes per row */
+        margin-bottom: 20px;  /* Add space between rows */
+    }
+}
+
+
