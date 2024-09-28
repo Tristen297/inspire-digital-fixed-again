@@ -164,7 +164,11 @@
     .service-section-boxes .box-3::after,
     .service-section-boxes .box-4::after {
         font-size: 12px;
-        padding: 15px;
+        padding: 12px;
+        top: 75%;  /* Adjust for smaller screens */
+        left: 10%;  /* Make sure there's some padding from the edges */
+        width: 80%;  /* Make sure the text fits inside the box */
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     }
 }
 
@@ -185,6 +189,7 @@
         height: 33vh;  /* Set the height of the boxes to 33% of the viewport height */
         width: 100%;  /* Ensure the boxes take up full width on smaller screens */
         margin-right: 0;  /* Remove right margin */
+        position: relative; /* Ensure relative positioning */
     }
 
     .service-section-boxes {
@@ -197,6 +202,10 @@
     .service-section-boxes .box-4::after {
         font-size: 14px;
         padding: 18px;
+        top: 70%;  /* Adjust position for smaller screens */
+        left: 10%;  /* Keep some padding from the edges */
+        width: 80%;  /* Ensure text fits inside the box */
+        background-color: rgba(0, 0, 0, 0.7); /* Make the background semi-transparent */
     }
 }
 
