@@ -87,15 +87,15 @@
 
 .about-img-1 {
     position: absolute;
-    width: 450px; /* Adjust size as needed */
+    width: 500px; /* Adjust size as needed */
     top: -30px; /* Adjust to control vertical positioning */
-    left: 100px; /* Adjust to control horizontal positioning */
+    left: 150px; /* Adjust to control horizontal positioning */
     z-index: 1; /* Ensure image 1 is beneath image 2 */
 }
 
 .about-img-2 {
     position: absolute;
-    width: 300px; /* Adjust size as needed */
+    width: 350px; /* Adjust size as needed */
     top: 250px; /* Adjust to control vertical positioning */
     left: 400px; /* Adjust to control horizontal positioning */
     z-index: 2; /* Bring image 2 on top of image 1 */
@@ -105,7 +105,7 @@
 
 .about-img-3 {
     position: absolute;
-    width: 400px; /* Adjust size as needed */
+    width: 450px; /* Adjust size as needed */
     top: 20px; /* Adjust to control vertical positioning */
     left: 0px; /* Adjust to control horizontal positioning */
 }
@@ -116,7 +116,7 @@
     }
 
     .about-img-2 {
-        left: calc(350px + (1580px - 100vw) * -0.5); /* Move image 2 dynamically */
+        left: calc(300px + (1580px - 100vw) * -0.5); /* Move image 2 dynamically */
     }
 
     .about-img-3 {
@@ -126,11 +126,11 @@
 
 @media (max-width: 1480px) {
     .about-img-1 {
-        left: calc(100px + (1480px - 100vw) * -0.5); /* Move image 1 dynamically */
+        left: calc(70px + (1480px - 100vw) * -0.5); /* Move image 1 dynamically */
     }
 
     .about-img-2 {
-        left: calc(320px + (1480px - 100vw) * -0.5); /* Move image 2 dynamically */
+        left: calc(280px + (1480px - 100vw) * -0.5); /* Move image 2 dynamically */
     }
 
     .about-img-3 {
