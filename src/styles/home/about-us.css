@@ -259,5 +259,16 @@
     .about-us-images {
         height: 0px;
     }
+
+    .about-icons {
+        flex-direction: column; /* Stack icon items vertically */
+        align-items: center; /* Center the items horizontally */
+        gap: 20px; /* Adjust gap between icons */
+    }
+
+    .icon-item {
+        text-align: center; /* Center the text under each icon */
+        width: 100%; /* Adjust width if needed */
+    }
 }
 
