@@ -1,97 +1,154 @@
-/* General layout */
 .services-breakdown-content {
-    position: relative;
-    color: white; /* White text color */
-    padding: 0px 20px;
-    width: 900px;
-    margin-left: 800px;
-    margin-bottom: 100px;
-  }
-  
-  .services-breakdown-illustration {
-    position: absolute;
-    top: 300px;
-    left: -600px; /* Move the illustration to the left */
-    transform: translateY(-50%);
-  }
-  
-  .services-breakdown-illustration img {
-    width: 500px;
-    height: auto;
-  }
-  
-  /* Text styling */
-  .services-breakdown-text {
-    text-align: left;
-    margin-bottom: 40px;
-  }
-  
-  .services-breakdown-text h1 {
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space the items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 0px 10px; /* Reduced padding */
+  width: 100%;
+  margin: 0 20px; /* Reduced outside margin */
+  margin-bottom: 100px;
+  color: white;
+  gap: 40px; /* Reduced gap between the containers */
+}
+
+/* Illustration styling */
+.services-breakdown-illustration {
+  flex-basis: 30%; /* Increased the space taken by the illustration */
+  text-align: center; /* Center the image */
+  margin-left: auto;
+}
+
+.services-breakdown-illustration img {
+  width: 100%; /* Make the image larger */
+  height: auto;
+}
+
+/* Text container */
+.services-breakdown-text-container {
+  flex-basis: 60%; /* Keep the text container wide */
+  padding-left: 40px; /* Reduced padding between image and text */
+  padding-right: 200px;
+}
+
+/* Text styling */
+.services-breakdown-text {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.services-breakdown-text h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.services-breakdown-text p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+/* Change the color of the first <p> to purple */
+.services-breakdown-text p:first-of-type {
+  color: #7A26C1;
+}
+
+/* Specific service boxes */
+.services-breakdown-specific {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two columns */
+  gap: 40px;
+}
+
+.service-1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.service-1 img {
+  width: 40px;
+  height: 40px;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-1 h1 {
+  font-size: 1.8rem;
+  color: #7A26C1;
+  margin-bottom: 10px;
+}
+
+.service-1 p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cccccc;
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 2000px) {
+  /* Adjust font size for paragraphs */
   .services-breakdown-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #cccccc;
-    margin-bottom: 20px;
+    font-size: 1.3rem;
   }
-  
-  /* Change the color of the first <p> to purple */
-  .services-breakdown-text p:first-of-type {
-    color: #7A26C1; 
-  }
-  
-  /* Specific service boxes */
-  .services-breakdown-specific {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-  
-  .service-1 {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-  }
-  
-  .service-1 img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .service-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
+
+  /* Adjust font size for specific service headers */
   .service-1 h1 {
-    font-size: 1.5rem;
-    color: #7A26C1;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
   }
-  
+
+  /* Adjust font size for specific service paragraphs */
   .service-1 p {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #cccccc;
-    margin-bottom: 0;
+    font-size: 1.3rem;
   }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .services-breakdown-content {
-      height: auto;
-    }
-  
-    .services-breakdown-illustration {
-      display: none;
-    }
-  
-    .services-breakdown-specific {
-      grid-template-columns: 1fr;
-    }
+}
+
+@media (max-width: 1800px) {
+  /* Adjust font size for paragraphs */
+  .services-breakdown-text p {
+    font-size: 1.0rem;
   }
-  
+
+  /* Adjust font size for specific service headers */
+  .service-1 h1 {
+    font-size: 1.3rem;
+  }
+
+  /* Adjust font size for specific service paragraphs */
+  .service-1 p {
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .services-breakdown-content {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Adjust gap between elements */
+  }
+
+  .services-breakdown-text-container {
+    flex-basis: 100%;
+    width: 90%;
+    padding: 20px 0px; /* Add spacing below the text container */
+    margin: 0;
+  }
+
+  .services-breakdown-illustration {
+    flex-basis: 100%;
+    width: 60%;
+    margin: 0; /* Remove margin */
+  }
+}
+
+@media (max-width: 700px) {
+  .services-breakdown-specific {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    gap: 40px; /* Adjust gap between items for better spacing */
+  }
+}
+
+
