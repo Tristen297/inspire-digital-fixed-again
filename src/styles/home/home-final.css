@@ -103,6 +103,10 @@
     .home-final-abs-text {
         font-size: 60px; /* Adjust this value as needed */
     }
+
+    .home-final-icon {
+        top: 260px;
+    }
 }
 
 @media (max-width: 856px) {
@@ -114,6 +118,10 @@
     /* Shrinking the font size of .home-final-abs-text */
     .home-final-abs-text {
         font-size: 50px; /* Adjust this value as needed */
+    }
+
+    .home-final-icon {
+        top: 230px;
     }
 }
 
@@ -128,11 +136,38 @@
     .home-final-abs-text {
         font-size: 40px; /* Adjust this value as needed */
     }
+
+    .home-final-icon {
+        top: 180px;
+    }
 }
 
 @media (max-width: 560px) {
     /* Shrinking the font size of .home-final-abs-text */
     .home-final-abs-text {
         font-size: 30px; /* Adjust this value as needed */
+    }
+
+    .home-final-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .home-final-picture img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 412px) {
+    /* Shrinking the font size of .home-final-abs-text */
+    .home-final-abs-text {
+        font-size: 25px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 359px) {
+    /* Shrinking the font size of .home-final-abs-text */
+    .home-final-text h1 {
+        font-size: 25px;
     }
 }
