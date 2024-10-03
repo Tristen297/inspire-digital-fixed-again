@@ -169,5 +169,6 @@
     /* Shrinking the font size of .home-final-abs-text */
     .home-final-text h1 {
         font-size: 25px;
+        padding-top: 20px;
     }
 }
