@@ -1,6 +1,7 @@
 import "../../styles/home/home-final.css";
 import homeImg from "../../images-and-icons/home-final-img.png";
 import homeIcon from "../../images-and-icons/home-final-icon.svg";
+import { Link } from 'react-router-dom';
 
 function HomeFinal() {
     return(
@@ -22,9 +23,9 @@ function HomeFinal() {
                 <img src={homeImg} alt="two men working together & looking at a paper" />
             </div>
             <div className="home-final-icon">
-                <a href="./">
+                <Link to="/contact-us">
                     <img src={homeIcon} alt="" />  
-                </a>
+                </Link> 
             </div>
         </div>
     )
