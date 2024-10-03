@@ -4,6 +4,7 @@ import tools from "../../images-and-icons/tools-icon.svg";
 import aboutImg1 from "../../images-and-icons/about-img1.jpg";
 import aboutImg2 from "../../images-and-icons/about-img3.jpg";
 import aboutShape from "../../images-and-icons/about-shape-2.png"
+import { Link } from 'react-router-dom'; 
 
 function AboutSection() {
     return (
@@ -31,7 +32,9 @@ function AboutSection() {
                         <p>Provide Market Standard Service to Clients</p>
                     </div>
                 </div>
-                <button className="about-button">Get Started Now</button>
+                <Link to="/contact-us">
+                    <button className="about-button">Get Started Now</button>
+                </Link>
             </div>
         </div>
     );

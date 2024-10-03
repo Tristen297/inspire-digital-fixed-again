@@ -85,3 +85,53 @@
     height: 40px;
     transform: rotate(135deg); /* Initial rotation */
 }
+
+@media (max-width: 1220px) {
+    .home-final-icon {
+        left: calc(630px - ((1220px - 100vw) / 2));
+    }
+}
+
+@media (max-width: 1075px) {
+    /* Shrinking the font size of .home-final-text h1 */
+    .home-final-text h1 {
+        font-size: 50px; /* Adjust this value as needed */
+    }
+
+    /* Shrinking the font size of .home-final-abs-text */
+    .home-final-abs-text {
+        font-size: 60px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 856px) {
+    /* Shrinking the font size of .home-final-text h1 */
+    .home-final-text h1 {
+        font-size: 40px; /* Adjust this value as needed */
+    }
+
+    /* Shrinking the font size of .home-final-abs-text */
+    .home-final-abs-text {
+        font-size: 50px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 695px) {
+    /* Shrinking the font size of .home-final-text h1 */
+    .home-final-text h1 {
+        font-size: 30px; /* Adjust this value as needed */
+        padding-top: 30px;
+    }
+
+    /* Shrinking the font size of .home-final-abs-text */
+    .home-final-abs-text {
+        font-size: 40px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 560px) {
+    /* Shrinking the font size of .home-final-abs-text */
+    .home-final-abs-text {
+        font-size: 35px; /* Adjust this value as needed */
+    }
+}

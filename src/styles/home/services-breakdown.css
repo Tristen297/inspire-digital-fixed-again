@@ -4,7 +4,7 @@
   align-items: center; /* Center items vertically */
   padding: 0px 10px; /* Reduced padding */
   width: 100%;
-  margin: 0 20px; /* Reduced outside margin */
+  margin: 100px 20px; /* Reduced outside margin */
   margin-bottom: 100px;
   color: white;
   gap: 40px; /* Reduced gap between the containers */
@@ -36,14 +36,14 @@
 }
 
 .services-breakdown-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Reduced font size for main title */
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .services-breakdown-text p {
-  font-size: 1.5rem;
-  line-height: 1.7;
+  font-size: 1.2rem; /* Reduced font size for paragraphs */
+  line-height: 1.;
   color: #cccccc;
   margin-bottom: 20px;
 }
@@ -77,18 +77,20 @@
 }
 
 .service-1 h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Reduced font size for service titles */
   color: #7A26C1;
   margin-bottom: 10px;
 }
 
 .service-1 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Reduced font size for service paragraphs */
   font-weight: bold;
   color: #cccccc;
   margin-bottom: 0;
 }
 
+
+/* Media Queries */
 
 @media (max-width: 2000px) {
   /* Adjust font size for paragraphs */
@@ -150,5 +152,3 @@
     gap: 40px; /* Adjust gap between items for better spacing */
   }
 }
-
-

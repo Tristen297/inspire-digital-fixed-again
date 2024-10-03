@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../styles/navbar/navbar.css";
 import Sidemenu from "./sidemenu";
 import logoIcon from "../../images-and-icons/inspire-icon.png";
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +23,10 @@ function Navbar() {
                 </div>
 
                 <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-                    <Link to="/">Home</Link> {/* Link to Home */}
-                    <Link to="/services">Services</Link> {/* Link to Services */}
-                    <Link to="/about-us">About Us</Link> {/* Link to About Us */}
-                    <Link to="/contact-us">Contact</Link> {/* Link to Contact */}
+                    <Link to="/">Home</Link> 
+                    <Link to="/services">Services</Link> 
+                    <Link to="/about-us">About Us</Link> 
+                    <Link to="/contact-us">Contact</Link> 
                 </div>
 
                 {/* Hamburger Icon */}
