@@ -2,27 +2,33 @@
     margin-bottom: 100px;
 }
 
+/* Relevant styling for services-ill-1 and services-text-1 */
+
 .services-sec-1 {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 1; /* Allow the whole section to shrink */
+    justify-content: center; /* Centers both containers horizontally */
     margin-top: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.services-ill-container {
+    width: 48%; /* Takes up almost half of the width */
+    margin-right: 10px; /* Small gap between the image and text */
+    margin-left: auto; /* Auto margins push the containers together */
 }
 
 .services-ill-1 {
-    max-width: 800px; /* Adjust the width of the image */
-    margin-right: 0vw; /* Add a small margin to the right of the image */
-    margin-left: auto;
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 100%; /* Image scales within its container */
 }
 
 .services-text-1 {
-    color: white;
-    width: 600px;
-    padding-left: 10px;
-    margin-right: auto; /* Ensure it stays centered until there is no more space */
-    flex-shrink: 1; /* Allow text to shrink */
+    width: 48%; /* Takes up almost half of the width */
+    max-width: 700px;
+    margin-left: 10px; /* Small gap between the text and image */
+    margin-right: auto; /* Auto margins push the containers together */
 }
 
 .services-text-1 p {
@@ -32,11 +38,14 @@
 }
 
 .services-text-1 h1 {
-    font-size: 40px;
+    color: white;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 30px;
 }
+
+
 
 .p-1 {
     margin-bottom: 20px;
@@ -56,20 +65,29 @@
 
 .services-sec-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 1; /* Allow the whole section to shrink */
-    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.services-ill-2-container {
+    width: 48%; /* Takes up almost half of the width */
+    margin-right: auto; /* Small gap between the image and text */
+    margin-left: 10px; /* Auto margins push the containers together */
+}
+
+.services-ill-2 {
+    width: 100%; /* Image scales within its container */
 }
 
 .services-text-2 {
-    color: white;
-    width: 600px;
-    padding-left: 10px;
-    margin-left: auto; /* Center the text container by default */
-    margin-right: 0px; /* Ensure it stays centered until there is no more space */
-    margin-top: 80px;
-    flex-shrink: 1; /* Allow text to shrink instead of growing taller */
+    width: 48%; /* Takes up almost half of the width */
+    max-width: 600px;
+    margin-left: auto; /* Small gap between the text and image */
+    margin-right: 10px; /* Auto margins push the containers together */
 }
 
 .services-text-2 p {
@@ -78,12 +96,9 @@
     font-weight: bold;
 }
 
-.services-p-1 {
-    margin-bottom: 20px;
-}
-
 .services-text-2 h1 {
-    font-size: 40px;
+    color: white;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -127,25 +142,28 @@
 }
 
 .services-ill-3 {
-    max-width: 800px; /* Adjust the width of the image */
-    margin-left: auto; /* Add a small margin to the right of the image */
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    margin-right: 40px;
+    width: 48%; /* Takes up almost half of the width */
+    margin-right: 10px; /* Small gap between the image and text */
+    margin-left: auto; /* Auto margins push the containers together */
 }
 
 .services-text-3 {
-    color: white;
-    width: 600px;
-    padding-left: 10px;
-    margin-right: auto; /* Ensure the text stays centered until there is no more space */
-    flex-shrink: 1; /* Allow text to shrink */
+    width: 48%; /* Takes up almost half of the width */
+    max-width: 700px;
+    margin-left: 10px; /* Small gap between the text and image */
+    margin-right: auto; /* Auto margins push the containers together */
 }
 
 .services-text-3 h1 {
+    color: white;
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 30px;
+}
+
+.services-text-3 h5 {
+    color: white;
 }
 
 .services-text-3 p {

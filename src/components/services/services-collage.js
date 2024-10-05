@@ -10,7 +10,9 @@ function ServicesCollage() {
   return (
     <div className="services-collage-content">
       <div className="services-sec-1">
-        <img src={servicesImg1} alt="" className="services-ill-1" />
+        <div className="services-ill-container">
+          <img src={servicesImg1} alt="" className="services-ill-1" />
+        </div>
         <div className="services-text-1">
           <h1>
             Web Design & Development <br />
@@ -78,7 +80,9 @@ function ServicesCollage() {
             </div>
           </div>
         </div>
-        <img src={servicesImg2} alt="" className="services-ill-2" />
+        <div className="services-ill-2-container">
+          <img src={servicesImg2} alt="" className="services-ill-2" />
+        </div>
       </div>
       <TransitionComp2 />
       <div className="services-sec-3">
