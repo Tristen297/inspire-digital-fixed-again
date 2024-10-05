@@ -86,7 +86,9 @@ function ServicesCollage() {
       </div>
       <TransitionComp2 />
       <div className="services-sec-3">
-        <img src={servicesImg3} alt="" className="services-ill-3" />
+        <div className="services-ill-3-container">
+          <img src={servicesImg3} alt="" className="services-ill-3" />
+        </div>
         <div className="services-text-3">
           <h1><span className="highlight-seo">Mobile-First</span> <br /> Website Development</h1>
           <p>

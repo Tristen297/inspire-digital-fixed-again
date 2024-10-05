@@ -136,15 +136,19 @@
 .services-sec-3 {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* Changed from flex-start to center */
     flex-shrink: 1; /* Allow the whole section to shrink */
     margin-top: 8vh;
 }
 
-.services-ill-3 {
+.services-ill-3-container {
     width: 48%; /* Takes up almost half of the width */
     margin-right: 10px; /* Small gap between the image and text */
     margin-left: auto; /* Auto margins push the containers together */
+}
+
+.services-ill-3 {
+    width: 100%; /* Image scales within its container */
 }
 
 .services-text-3 {
@@ -156,14 +160,10 @@
 
 .services-text-3 h1 {
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 30px;
-}
-
-.services-text-3 h5 {
-    color: white;
 }
 
 .services-text-3 p {
@@ -184,6 +184,7 @@
 }
 
 .services-line-item-sec-3 h5 {
+    color: white;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px; /* Add space between the h5 and the p element */
@@ -201,3 +202,60 @@
     height: auto;
     margin-right: 10px;
 }
+
+@media (max-width: 1420px) {
+    .services-text-1 h1,
+    .services-text-2 h1,
+    .services-text-3 h1 {
+        font-size: 35px; /* Shrink the h1 font size */
+    }
+}
+
+/* Media query for max-width 1095px */
+@media (max-width: 1095px) {
+    .services-text-1 h1,
+    .services-text-2 h1,
+    .services-text-3 h1 {
+        font-size: 25px; /* Further shrink the h1 font size */
+    }
+
+    .services-text-1 p,
+    .services-text-2 p,
+    .services-text-3 p {
+        font-size: 14px; /* Shrink the paragraph font size */
+    }
+}
+
+/* Media query for max-width 965px */
+@media (max-width: 965px) {
+    .services-sec-1,
+    .services-sec-2,
+    .services-sec-3 {
+        flex-direction: column; /* Stack elements on top of each other */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .services-ill-container,
+    .services-ill-2-container,
+    .services-ill-3-container {
+        width: 100%; /* Make the illustrations full width */
+        margin: 0 auto 20px auto; /* Center illustrations with margin below */
+    }
+
+    .services-text-1,
+    .services-text-2,
+    .services-text-3 {
+        width: 90%; /* Keep the text a bit narrower with padding */
+        max-width: none; /* Remove the max width to allow for full expansion */
+        margin: 0 auto; /* Center the text */
+        padding: 0 20px; /* Add padding on the left and right for text */
+    }
+
+    /* Ensure the illustration appears above the text in each section */
+    .services-ill-container,
+    .services-ill-2-container,
+    .services-ill-3-container {
+        order: -1; /* Move all illustrations above their respective text */
+    }
+}
+
