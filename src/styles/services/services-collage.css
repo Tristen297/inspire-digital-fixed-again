@@ -239,7 +239,7 @@
     .services-ill-2-container,
     .services-ill-3-container {
         width: 100%; /* Make the illustrations full width */
-        margin: 0 auto 20px auto; /* Center illustrations with margin below */
+        margin: 0 auto 10px auto; /* Reduced bottom margin for illustrations */
     }
 
     .services-text-1,
@@ -251,11 +251,29 @@
         padding: 0 20px; /* Add padding on the left and right for text */
     }
 
+    /* Add bottom margin for the first two text sections */
+    .services-text-1,
+    .services-text-2 {
+        margin-bottom: 20px; /* Prevent arrows from touching the text */
+    }
+
     /* Ensure the illustration appears above the text in each section */
     .services-ill-container,
     .services-ill-2-container,
     .services-ill-3-container {
         order: -1; /* Move all illustrations above their respective text */
     }
+
+    .services-ill-2-container {
+        padding-top: 30px;
+    }
+
+    /* Move illustration 3 up slightly */
+    .services-ill-3-container {
+        margin-top: -50px; /* Adjust the value as needed to move it up */
+    }
 }
+
+
+
 
