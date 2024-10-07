@@ -1,5 +1,5 @@
 import "../../styles/about-us/about-us-hero.css";
-
+ 
 function AboutUsHero() {
     return (
         <div className="about-us-hero-content">

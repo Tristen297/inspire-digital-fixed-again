@@ -56,13 +56,43 @@
     margin-bottom: 10px;
 }
 
+.cta-button {
+    align-self: center;
+}
+
+@media (max-width: 1038px) {
+    .about-us-numbers-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%; /* Make the button take up the full width */
+        padding: 15px 20px; /* Add more padding for a larger feel */
+        font-size: 1.2rem; /* Increase font size */
+        font-weight: bold; /* Emphasize the button text */
+        background: linear-gradient(135deg, #4ae19b, #7A26C1); /* Add a cool gradient background */
+        border: none;
+        border-radius: 50px; /* Rounded corners for a modern look */
+        color: white; /* White text for contrast */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a nice shadow for depth */
+        transition: all 0.3s ease; /* Smooth transition for hover effects */
+        cursor: pointer; /* Change cursor to pointer */
+        text-transform: uppercase; /* Uppercase text for emphasis */
+        letter-spacing: 1.5px; /* Add some letter spacing */
+        margin-top: 20px;
+    }
+
+    .cta-button:hover {
+        transform: scale(1.05); /* Slight scaling effect on hover */
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+        background: linear-gradient(135deg, #7A26C1, #4ae19b); /* Reverse the gradient on hover */
+    }
+}
+
 @media (max-width: 768px) {
     .about-us-numbers-content {
         flex-direction: column;
         align-items: center;
     }
-}
-
-.cta-button {
-    align-self: center;
 }
