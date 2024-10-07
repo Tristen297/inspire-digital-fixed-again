@@ -105,6 +105,16 @@
         margin-right: 0; /* Reset margin */
         margin-bottom: 20px; /* Add some space between the sections */
     }
+
+    .text-section h1, 
+    .square-content h1 {
+        font-size: 30px; /* Adjust h1 font size */
+    }
+
+    .text-section p, 
+    .square-content p {
+        font-size: 18px; /* Adjust p font size */
+    }
 }
 
 @media (max-width: 560px) {
@@ -115,6 +125,17 @@
     .text-section, 
     .square-section {
         width: 100%; /* Make the sections take up the full width */
+    }
+
+    .text-section h1, 
+    .square-content h1 {
+        font-size: 25px; /* Adjust h1 font size */
+    }
+
+    .text-section p, 
+    .square-content p {
+        font-size: 14px; /* Adjust p font size */
+        line-height: 2;
     }
 }
 
