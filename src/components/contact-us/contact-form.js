@@ -8,21 +8,15 @@ function ContactForm() {
             <div className="contact-form-body">
                 <div className="ill-text">
                     <img src={contactIll} alt="svg of a stylized lady standing next to a giant phone" className="contact-ill-1" />
-                    <div className="contact-sec">
-                        <h3>
-                            Email:
-                        </h3>
-                        <h6>
-                            contact@myinspiredigital.com
-                        </h6>
-                    </div>
-                    <div className="contact-sec">
-                        <h3>
-                            Phone:
-                        </h3>
-                        <h6>
-                            (812) 260-1399
-                        </h6>
+                    <div className="contact-details">
+                        <div className="contact-sec">
+                            <h3>Email:</h3>
+                            <h6>contact@myinspiredigital.com</h6>
+                        </div>
+                        <div className="contact-sec">
+                            <h3>Phone:</h3>
+                            <h6>(812) 260-1399</h6>
+                        </div>
                     </div>
                 </div>
                 <iframe
