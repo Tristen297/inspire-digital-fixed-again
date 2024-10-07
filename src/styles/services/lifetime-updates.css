@@ -1,3 +1,4 @@
+
 .lifetime-updates-content {
     display: flex;
     justify-content: space-between; /* Ensure sections are aligned horizontally */
@@ -6,7 +7,7 @@
     padding: 20px;
     max-width: 1200px; /* Limit the max width of the section */
     gap: 20px; /* Add space between the text and square sections */
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 /* Styling for the text section */
@@ -83,4 +84,52 @@
     font-size: 16px;
     line-height: 1.6;
     color: lightgrey;
+}
+
+@media (max-width: 980px) {
+    .lifetime-updates-content {
+        flex-direction: column-reverse; /* Stack the sections vertically with square-section above text-section */
+        align-items: center; /* Center the content */
+    }
+
+    .text-section, 
+    .square-section {
+        width: 80%; /* Make the sections take up the full width */
+    }
+
+    .text-section {
+        margin-left: 0; /* Reset margin */
+    }
+
+    .square-section {
+        margin-right: 0; /* Reset margin */
+        margin-bottom: 20px; /* Add some space between the sections */
+    }
+}
+
+@media (max-width: 560px) {
+    .lifetime-updates-content {
+        margin-top: -20px; /* Moves the content up by 20px */
+    }
+
+    .text-section, 
+    .square-section {
+        width: 100%; /* Make the sections take up the full width */
+    }
+}
+
+@media (max-width: 450px) {
+    .lifetime-updates-content {
+        flex-direction: column; /* Stack sections vertically with text-section above square-section */
+        margin-bottom: 0px;
+    }
+
+    .square-section {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        margin-bottom: 0; /* Remove extra margin if needed */
+    }
+
+    .text-section {
+        margin-bottom: 20px; /* Add space below the text section */
+    }
 }
