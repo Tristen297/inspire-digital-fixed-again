@@ -1,10 +1,12 @@
+
+
 .services-breakdown-content {
   display: flex; /* Flexbox layout */
   justify-content: space-between; /* Space the items evenly */
   align-items: center; /* Center items vertically */
   padding: 0px 10px; /* Reduced padding */
   width: 100%;
-  margin: 100px 20px; /* Reduced outside margin */
+  margin: 150px 20px; /* Reduced outside margin */
   margin-bottom: 100px;
   color: white;
   gap: 40px; /* Reduced gap between the containers */
@@ -144,12 +146,11 @@
     width: 60%;
     margin: 0; /* Remove margin */
   }
-
 }
 
-@media (max-width: 1210px) {
+@media (max-height: 1220px) {
   .services-breakdown-content {
-    margin-top: -150px; /* Adjust or remove top margin */
+    margin-top: ;
   }
 }
 
@@ -158,14 +159,5 @@
     grid-template-columns: 1fr; /* Change to single column layout */
     gap: 40px; /* Adjust gap between items for better spacing */
   }
-
-  .services-breakdown-content {
-    margin-top: -80px; /* Adjust or remove top margin */
-  }
 }
 
-@media (max-width: 500px) {
-  .services-breakdown-content {
-    margin-top: -50px; /* Adjust or remove top margin */
-}
-}
