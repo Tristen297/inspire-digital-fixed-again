@@ -144,6 +144,10 @@
     width: 60%;
     margin: 0; /* Remove margin */
   }
+
+  .services-breakdown-content {
+    margin-top: -150px; /* Adjust or remove top margin */
+  }
 }
 
 @media (max-width: 700px) {
@@ -151,4 +155,14 @@
     grid-template-columns: 1fr; /* Change to single column layout */
     gap: 40px; /* Adjust gap between items for better spacing */
   }
+
+  .services-breakdown-content {
+    margin-top: -120px; /* Adjust or remove top margin */
+  }
+}
+
+@media (max-width: 500px) {
+  .services-breakdown-content {
+    margin-top: -100px; /* Adjust or remove top margin */
+}
 }

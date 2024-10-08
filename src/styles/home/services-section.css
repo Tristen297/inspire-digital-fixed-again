@@ -205,7 +205,17 @@
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .services-section-content {
+        margin-bottom: 0;
+    }
+}
+
 @media only screen and (max-width: 1025px) {
+    .services-section-content {
+        margin-top: 50px; /* Reduce the margin */
+    }
+
     .services-section-text p {
         font-size: 1rem;
     }
@@ -236,3 +246,5 @@
         margin-bottom: 20px;
     }
 }
+
+ 

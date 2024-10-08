@@ -248,6 +248,13 @@
     }
 }
 
+@media only screen and (max-width: 950px) {
+   .about-section-content {
+        margin-top: 30px;
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+}
+
 @media (max-width: 750px) {
     /* Hide all images */
     .about-img-1,

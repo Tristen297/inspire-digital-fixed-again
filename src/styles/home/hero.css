@@ -226,6 +226,9 @@
         justify-content: flex-start;
         padding-top: 0;
         margin-top: 0;
+        margin-bottom: 0; /* Reduce or remove any bottom margin */
+        padding-bottom: 0; /* Reduce or remove any bottom padding */
+        
     }
 
     .hero-content-text {
@@ -267,7 +270,7 @@
         display: block;
         margin-left: 20px;
         margin-right: auto;
-        margin-bottom: 20vh;
+        margin-bottom: 0vh;
     }
 
     .hero-text, 
