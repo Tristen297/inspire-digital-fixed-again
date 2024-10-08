@@ -148,11 +148,7 @@
   }
 }
 
-@media (max-height: 1220px) {
-  .services-breakdown-content {
-    margin-top: ;
-  }
-}
+
 
 @media (max-width: 700px) {
   .services-breakdown-specific {
