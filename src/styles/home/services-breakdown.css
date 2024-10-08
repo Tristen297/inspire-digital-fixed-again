@@ -145,6 +145,9 @@
     margin: 0; /* Remove margin */
   }
 
+}
+
+@media (max-width: 1210px) {
   .services-breakdown-content {
     margin-top: -150px; /* Adjust or remove top margin */
   }
@@ -157,12 +160,12 @@
   }
 
   .services-breakdown-content {
-    margin-top: -120px; /* Adjust or remove top margin */
+    margin-top: -80px; /* Adjust or remove top margin */
   }
 }
 
 @media (max-width: 500px) {
   .services-breakdown-content {
-    margin-top: -100px; /* Adjust or remove top margin */
+    margin-top: -50px; /* Adjust or remove top margin */
 }
 }
