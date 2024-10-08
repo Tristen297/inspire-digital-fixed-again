@@ -3,6 +3,7 @@ import update from "../../images-and-icons/update-icon.svg";
 import weelchair from "../../images-and-icons/handicp-icon.svg";
 import search from "../../images-and-icons/search-icon.svg";
 import google from "../../images-and-icons/google-icon.svg";
+import { Link } from 'react-router-dom'; 
 
 function LifetimeUpdates() {
     return(
@@ -14,9 +15,11 @@ function LifetimeUpdates() {
                 <p>
                     Google changes its search alogrithm standards every so often, changing what is important to rank. And web accessibility guidelines for users with screen readers get updated as well. So we also include <span className="highlight-text">lifetime updates</span> to your website to make sure it never goes out of date and is always changing with the times.
                 </p>
-                <button className="about-button">
-                    Get Started Now
-                </button>
+                <Link to="/contact-us">
+                    <button className="about-button">
+                        Get Started Now
+                    </button>
+                </Link> 
             </div>
             <div className="square-section">
                 <div className="square-content">

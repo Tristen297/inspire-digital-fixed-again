@@ -1,4 +1,5 @@
 import "../../styles/about-us/about-us-numbers.css";
+import { Link } from 'react-router-dom'; 
 
 function AboutusNumbers() {
     return(
@@ -24,9 +25,11 @@ function AboutusNumbers() {
                     We can edit the design to cater to your tastes. Everything is customizable!
                 </p>
             </div>
-            <div className="cta-container"> {/* New div for the button */}
-                <button className="cta-button">Get Started Now</button>
-            </div>
+            <Link to="/contact-us">
+                <div className="cta-container"> {/* New div for the button */}
+                    <button className="cta-button">Get Started Now</button>
+                </div>
+            </Link> 
         </div>
     );
 }
